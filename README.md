@@ -1,4 +1,4 @@
-![Animal Care System Banner](https://raw.githubusercontent.com/seu-usuario/animal-care-system/main/assets/Animal-Care-System.png)
+
 
 🐾 Animal Care System
 
