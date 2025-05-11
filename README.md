@@ -18,29 +18,29 @@ Backend
 Navegue até a pasta backend: cd backend
 
 
-Instale as dependências:npm install
+Instale as dependências: npm install
 
 
 Configure o arquivo .env com a URL do banco de dados:DATABASE_URL="postgresql://username:password@localhost:5432/animal_care?schema=public"
 PORT=5000
 
 
-Execute as migrações do Prisma:npx prisma migrate dev --name init
+Execute as migrações do Prisma: npx prisma migrate dev --name init
 
 
-Inicie o servidor:npm run dev
+Inicie o servidor: npm run dev
 
 
 
 Frontend
 
-Navegue até a pasta frontend:cd frontend
+Navegue até a pasta frontend: cd frontend
 
 
-Instale as dependências:npm install
+Instale as dependências: npm install
 
 
-Inicie o servidor de desenvolvimento: npm start
+Inicie o servidor de desenvolvimento: npm run start
 
 
 
