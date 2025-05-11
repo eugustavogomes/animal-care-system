@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Care {
+  id          Int                   @id @default(autoincrement())
+  name        String
+  description String
+  frequency   String
+  animals     AnimalCareAssignment[] // Relacionamento com a tabela de atribuições
+}
+
+model Animal {
+  id          Int                   @id @default(autoincrement())
+  name        String
+  description String?
+  birthDate   DateTime?
+  species     String?
+  habitat     String?
+  country     String?
+  cares       AnimalCareAssignment[] // Relacionamento com a tabela de atribuições
+  caregiver   Caregiver?            @relation(fields: [caregiverId], references: [id])
+  caregiverId Int?
+}
+
+model Caregiver {
+  id          Int                   @id @default(autoincrement())
+  name        String
+  animals     Animal[]
+  cares       AnimalCareAssignment[]
+}
+
+model AnimalCareAssignment {
+  id           Int        @id @default(autoincrement())
+  careId       Int
+  animalId     Int
+  caregiverId  Int?
+  status       String     @default("Em andamento")
+  care         Care       @relation(fields: [careId], references: [id])
+  animal       Animal     @relation(fields: [animalId], references: [id])
+  caregiver    Caregiver? @relation(fields: [caregiverId], references: [id])
+}
