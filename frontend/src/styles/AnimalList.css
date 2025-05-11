@@ -1,0 +1,36 @@
+.table-custom {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-custom th {
+  background-color: black !important;
+  color: white !important;
+  text-align: center;
+}
+
+.table-custom td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-select-custom {
+  border: 2px solid #ced4da;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .table-custom {
+    font-size: 0.9rem;
+  }
+}

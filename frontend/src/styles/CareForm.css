@@ -1,0 +1,40 @@
+.form-control-custom {
+  border: 2px solid #ced4da;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control-custom:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.btn-custom {
+  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #51565c !important;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 576px) {
+  .btn-custom {
+    width: 100%;
+  }
+}

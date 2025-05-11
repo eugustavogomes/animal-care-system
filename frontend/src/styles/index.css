@@ -1,0 +1,64 @@
+:root {
+  /* Cores do tema zoológico */
+  --primary-green: #2E7D32; /* Verde floresta */
+  --secondary-green: #4CAF50; /* Verde claro */
+  --earth-brown: #5D4037; /* Marrom terra */
+  --sand-beige: #FFF8E1; /* Bege claro */
+  --savanna-yellow: #FFC107; /* Amarelo savana */
+  --text-dark: #1A1A1A; /* Texto escuro */
+  --text-light: #FFFFFF; /* Texto claro */
+
+  /* Fontes */
+  --font-primary: 'Roboto', sans-serif;
+  --font-title: 'Amatic SC', cursive;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--sand-beige);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+  color: var(--primary-green);
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.alert {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link-custom {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+}
+
+.nav-link-custom:hover {
+  color: #17a2b8 !important; /* Cor de destaque (info) */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
