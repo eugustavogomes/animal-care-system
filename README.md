@@ -54,7 +54,7 @@ Nota: Substitua username, password e outros valores conforme sua configuração.
 Execute as migrações do Prisma: npx prisma migrate dev --name init
 
 
-Inicie o servidor: npm run dev
+Inicie o servidor na porta 3000: npm run dev
 
 
 
@@ -69,7 +69,7 @@ Instale as dependências: npm install
 Inicie o servidor de desenvolvimento: npm run start
 
 
-Acesse em http://localhost:3000.
+Acesse em http://localhost:3001.
 
 
 
