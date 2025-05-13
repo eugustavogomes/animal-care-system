@@ -1,52 +1,107 @@
-Animal Care System
-Sistema web para gerenciamento de animais e cuidados, desenvolvido com Node.js, Express, Prisma, PostgreSQL, React e Bootstrap.
-Tecnologias Utilizadas
 
-Backend: Node.js, Express, Prisma, PostgreSQL
-Frontend: React, Bootstrap, Axios
-Outros: Git, GitHub
 
-Requisitos
+🐾 Animal Care System
 
-Node.js (>= 16.x)
-PostgreSQL
-npm
 
-Configuração
+Um sistema web moderno para gerenciamento de animais, cuidados e cuidadores, projetado para ser intuitivo, escalável e fácil de usar.
+
+
+🚀 Tecnologias Utilizadas
+
+Backend
+
+Node.js: Ambiente de execução JavaScript.
+Express: Framework para APIs RESTful.
+Prisma: ORM para interação com o banco de dados.
+PostgreSQL: Banco de dados relacional.
+
+Frontend
+
+React: Interfaces dinâmicas e reativas.
+Bootstrap: Design responsivo e moderno.
+Axios: Comunicação com a API.
+
+Outros
+
+Git: Controle de versão.
+GitHub: Hospedagem do código.
+ESLint/Prettier: Qualidade de código.
+
+
+📋 Pré-requisitos
+
+Node.js (≥ 16.x)
+PostgreSQL (configurado)
+npm (gerenciador de pacotes)
+
+
+⚙️ Configuração do Projeto
 Backend
 
 Navegue até a pasta backend: cd backend
 
 
-Instale as dependências:npm install
+Instale as dependências: npm install
 
 
-Configure o arquivo .env com a URL do banco de dados:DATABASE_URL="postgresql://username:password@localhost:5432/animal_care?schema=public"
+Crie um arquivo .env na pasta backend com:DATABASE_URL="postgresql://username:password@localhost:5432/animal_care?schema=public"
 PORT=5000
 
 
-Execute as migrações do Prisma:npx prisma migrate dev --name init
+Nota: Substitua username, password e outros valores conforme sua configuração.
 
 
-Inicie o servidor:npm run dev
+Execute as migrações do Prisma: npx prisma migrate dev --name init
+
+
+Inicie o servidor na porta 3000: npm run dev
 
 
 
 Frontend
 
-Navegue até a pasta frontend:cd frontend
+Navegue até a pasta frontend: cd frontend
 
 
-Instale as dependências:npm install
+Instale as dependências: npm install
 
 
-Inicie o servidor de desenvolvimento: npm start
+Inicie o servidor de desenvolvimento: npm run start
+
+
+Acesse em http://localhost:3001.
 
 
 
-Funcionalidades
 
-Cadastro, listagem, atualização e remoção de animais, cuidados e cuidadores.
-Filtro por habitat na listagem de animais.
-Interface amigável com Bootstrap.
-API REST com validações.
+🛠️ Funcionalidades
+
+🐘 Gerenciamento de Animais: Cadastro, listagem, edição e remoção.
+🩺 Gerenciamento de Cuidados: Registro e acompanhamento de cuidados.
+👷 Gerenciamento de Cuidadores: Administração de informações.
+🔍 Filtros Avançados: Filtragem por habitat ou outras características.
+📱 Interface Intuitiva: Design responsivo com Bootstrap.
+🔒 API Segura: Endpoints REST com validações.
+✅ Feedback ao Usuário: Notificações claras para ações.
+
+
+📂 Estrutura do Projeto
+animal-care-system/
+├── backend/
+│   ├── prisma/
+│   ├── src/
+│   ├── .env
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+└── README.md
+
+
+
+🐞 Solução de Problemas
+
+Erro de conexão com o banco: Verifique o PostgreSQL e as credenciais no .env.
+Porta em uso: Altere o PORT no .env ou libere a porta.
+Dependências não instaladas: Execute npm install nas pastas backend e frontend.
